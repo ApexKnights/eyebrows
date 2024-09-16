@@ -1,0 +1,140 @@
+.consult {
+  background: #f3f2ed;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+
+  .banner1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../../assets/haircut-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex-direction: column;
+
+    @media (max-width: 768px) {
+      width: 100%;
+      min-height: 70vh;
+      gap: 20px;
+      align-items: center;
+      justify-content: center;
+    }
+
+    img {
+      height: 40%;
+
+      @media (max-width: 768px) {
+        height: 40%;
+        width: 90%;
+      }
+    }
+
+    h1 {
+      font-size: 60px;
+      text-align: center;
+      color: #fff;
+
+      @media (max-width: 800px) {
+        width: 90%;
+      }
+
+      @media (max-width: 500px) {
+        font-size: 30px;
+      }
+    }
+
+    h2 {
+      color: #fff;
+    }
+  }
+
+  .banner2 {
+    width: 90%;
+    display: flex;
+    background-color: #a8a695;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    min-height: 40vh;
+
+    .left {
+      width: 60%;
+      display: flex;
+      align-items: start;
+      justify-content: center;
+      flex-direction: column;
+      gap: 20px;
+      padding-left: 40px;
+      color: #fff;
+
+      h2 {
+        font-size: 40px;
+        @media (max-width: 768px) {
+          font-size: 20px;
+        }
+      }
+    }
+
+    .right {
+      display: flex;
+      width: 100%;
+      align-items: center;
+      justify-content: end;
+
+      .frame {
+        width: 100%;
+        height: 100%;
+        border-radius: 20px 20px 20px 20px;
+        outline: none;
+        border: none;
+        filter: invert(100);
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .banner2 {
+    width: 90%;
+    display: flex;
+    background-color: #a8a695;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    min-height: 40vh;
+    flex-direction: column-reverse;
+    gap: 20px;
+
+    .left {
+      width: 100%;
+      display: flex;
+      align-items: start;
+      justify-content: center;
+      flex-direction: column;
+      gap: 20px;
+      padding-left: 40px;
+      color: #fff;
+      padding: 20px;
+    }
+
+    .right {
+      width: 100%;
+      display: flex;
+
+      .frame {
+        width: 100%;
+        height: 100%;
+        border-radius: 20px 20px 20px 20px;
+        outline: none;
+        border: none;
+        filter: invert(100);
+      }
+    }
+  }
+}
